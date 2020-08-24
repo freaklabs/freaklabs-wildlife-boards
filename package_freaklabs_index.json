@@ -14,7 +14,7 @@
           "architecture": "avr",
           "version": "1.0.0",
           "category": "Freaklabs",
-          "url": "https://github.com/freaklabs/freaklabs-boards/raw/master/boards/freaklabs-wildlife-1.0.0.zip",
+          "url": "https://github.com/freaklabs/freaklabs-wildlife-boards/raw/master/boards/freaklabs-wildlife-1.0.0.zip",
           "archiveFileName": "freaklabs-wildlife-1.0.0.zip",
           "checksum": "SHA-256:4fb69ee24323c5fb6cd81af384c1a0cd02740b6038ea6ddcf6b702cc0d8e937d",
           "size": "702120",
