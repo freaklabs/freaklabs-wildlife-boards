@@ -1,0 +1,43 @@
+{
+  "packages": [
+    {
+      "name": "Freaklabs Wildlife",
+      "maintainer": "Freaklabs",
+      "websiteURL": "https://freaklabs.org",
+      "email": "support@freaklabsstore.com",
+      "help": {
+        "online": "https://freaklabs.org/"
+      },
+      "platforms": [
+        {
+          "name": "Freaklabs Wildlife Boards",
+          "architecture": "avr",
+          "version": "1.0.0",
+          "category": "Freaklabs",
+          "url": "https://github.com/freaklabs/freaklabs-boards/raw/master/boards/freaklabs-wildlife-1.0.0.zip",
+          "archiveFileName": "freaklabs-wildlife-1.0.0.zip",
+          "checksum": "SHA-256:4fb69ee24323c5fb6cd81af384c1a0cd02740b6038ea6ddcf6b702cc0d8e937d",
+          "size": "702120",
+          "boards": [
+              {"name": "FreakLabs WildLogger v1.x"}, 
+              {"name": "FreakLabs Wilduino Standard v1.x"}, 
+              {"name": "FreakLabs Wilduino Deluxe v1.x"}
+          ]
+        }
+      ],
+      "toolsDependencies": [
+        {
+          "packager": "arduino",
+          "name": "avr-gcc",
+          "version": "4.8.1-arduino5"
+        },
+        {
+          "packager": "arduino",
+          "name": "avrdude",
+          "version": "6.0.1-arduino5"
+        }
+      ],
+      "tools": []
+    }
+  ]
+}

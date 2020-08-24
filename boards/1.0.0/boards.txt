@@ -1,0 +1,80 @@
+menu.ver=Version
+
+##############################################################
+## Wilduino
+
+wilduino.name=Freaklabs Wilduino
+
+wilduino.upload.tool=arduino:avrdude
+wilduino.upload.protocol=arduino
+
+wilduino.bootloader.tool=arduino:avrdude
+wilduino.bootloader.unlock_bits=0x3F
+wilduino.bootloader.lock_bits=0x0F
+
+wilduino.build.f_cpu=16000000L
+wilduino.build.core=arduino:arduino
+wilduino.build.board=WILDUINO
+
+	## Wilduino Standard 5.0V, 16 MHz, w/ATMega328P
+	## ---------------------------------------------
+	wilduino.menu.ver.wildstd=Wilduino Standard v1.x
+
+	wilduino.menu.ver.wildstd.upload.maximum_size=28672
+	wilduino.menu.ver.wildstd.upload.maximum_data_size=2048
+	wilduino.menu.ver.wildstd.upload.speed=115200
+
+	wilduino.menu.ver.wildstd.bootloader.low_fuses=0xE2
+	wilduino.menu.ver.wildstd.bootloader.high_fuses=0xDA
+	wilduino.menu.ver.wildstd.bootloader.extended_fuses=0xFE
+	wilduino.menu.ver.wildstd.bootloader.file=optiboot/optiboot_atmega328.hex.hex
+
+	wilduino.menu.ver.wildstd.build.mcu=atmega328p
+	wilduino.menu.ver.wildstd.build.variant=wilduinostd
+	wilduino.menu.ver.wildstd.build.board=WILDUINOSTD
+
+	## Wilduino Deluxe 5.0V, 16 MHz, w/ATMega1284P
+	## ---------------------------------------------
+	wilduino.menu.ver.wild1284p=Wilduino Pro v1.x
+
+	wilduino.menu.ver.wild1284p.upload.maximum_size=126976
+	wilduino.menu.ver.wild1284p.upload.maximum_data_size=16384
+	wilduino.menu.ver.wild1284p.upload.speed=115200
+	wilduino.menu.ver.wild1284p.compiler.c.elf.extra_flags=-Wl,-u,vfprintf -lprintf_flt
+
+	wilduino.menu.ver.wild1284p.bootloader.low_fuses=0xFD
+	wilduino.menu.ver.wild1284p.bootloader.high_fuses=0xDC
+	wilduino.menu.ver.wild1284p.bootloader.extended_fuses=0xFE
+	wilduino.menu.ver.wild1284p.bootloader.file=optiboot/optiboot_atmega1284p.hex
+
+	wilduino.menu.ver.wild1284p.build.mcu=atmega1284p
+	wilduino.menu.ver.wild1284p.build.board=WILDUINODLX
+	wilduino.menu.ver.wild1284p.build.variant=wilduinodlx
+	
+##############################################################
+## WildLogger
+
+wildlogger.name=Freaklabs WildLogger v1.x
+
+wildlogger.upload.tool=arduino:avrdude
+wildlogger.upload.protocol=arduino
+
+wildlogger.bootloader.tool=arduino:avrdude
+wildlogger.bootloader.unlock_bits=0x3F
+wildlogger.bootloader.lock_bits=0x0F
+
+wildlogger.build.core=arduino:arduino
+wildlogger.build.board=WILDLOGGER
+wildlogger.compiler.c.elf.extra_flags=-Wl,-u,vfprintf -lprintf_flt
+wildlogger.upload.maximum_size=126976
+wildlogger.upload.maximum_data_size=16384
+wildlogger.upload.speed=230400
+
+wildlogger.bootloader.low_fuses=0xFD
+wildlogger.bootloader.high_fuses=0xDC
+wildlogger.bootloader.extended_fuses=0xFE
+wildlogger.bootloader.file=optiboot/optiboot_atmega1284p_7MHz.hex
+
+wildlogger.build.f_cpu=7372800L
+wildlogger.build.mcu=atmega1284p
+wildlogger.build.variant=wildlogger
