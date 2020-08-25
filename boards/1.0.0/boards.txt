@@ -51,6 +51,7 @@ wilduino.build.board=WILDUINO
 	wilduino.menu.ver.wild1284p.build.board=WILDUINODLX
 	wilduino.menu.ver.wild1284p.build.variant=wilduinodlx
 	
+
 ##############################################################
 ## WildLogger
 
@@ -68,13 +69,13 @@ wildlogger.build.board=WILDLOGGER
 wildlogger.compiler.c.elf.extra_flags=-Wl,-u,vfprintf -lprintf_flt
 wildlogger.upload.maximum_size=126976
 wildlogger.upload.maximum_data_size=16384
-wildlogger.upload.speed=230400
+wildlogger.upload.speed=57600
 
 wildlogger.bootloader.low_fuses=0xFD
 wildlogger.bootloader.high_fuses=0xDC
 wildlogger.bootloader.extended_fuses=0xFE
-wildlogger.bootloader.file=optiboot/optiboot_atmega1284p_7MHz.hex
+wildlogger.bootloader.file=optiboot/optiboot_atmega1284p_8mhz_57k.hex
 
-wildlogger.build.f_cpu=7372800L
+wildlogger.build.f_cpu=8000000L
 wildlogger.build.mcu=atmega1284p
 wildlogger.build.variant=wildlogger
