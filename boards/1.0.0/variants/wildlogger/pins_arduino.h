@@ -3,7 +3,7 @@
 
 #include <avr/pgmspace.h>
 
-#define SABOTEN 1
+#define WILDLOGGER 1
 
 #define NUM_DIGITAL_PINS            31
 #define NUM_ANALOG_INPUTS           8
@@ -28,6 +28,8 @@ static const uint8_t A4 = 28;
 static const uint8_t A5 = 29;
 static const uint8_t A6 = 30;
 static const uint8_t A7 = 31;
+
+#define LED_BUILTIN 13
 
 #define digitalPinToPCICR(p)    (((p) >= 0 && (p) < NUM_DIGITAL_PINS) ? (&PCICR) : ((uint8_t *)0))
 #define digitalPinToPCICRbit(p) (((p) <= 3)     ?   3 : \
