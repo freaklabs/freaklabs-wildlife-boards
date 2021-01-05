@@ -12,11 +12,11 @@
         {
           "name": "Freaklabs Wildlife Boards",
           "architecture": "avr",
-          "version": "1.0.2",
+          "version": "1.0.3",
           "category": "Freaklabs",
-          "url": "https://github.com/freaklabs/freaklabs-wildlife-boards/raw/master/boards/freaklabs-wildlife-1.0.2.zip",
-          "archiveFileName": "freaklabs-wildlife-1.0.2.zip",
-          "checksum": "SHA-256:154cfaf76da73023a74fdd9da8b270179ce10661cca5fddad7e53522b8f728b7",
+          "url": "https://github.com/freaklabs/freaklabs-wildlife-boards/raw/master/boards/freaklabs-wildlife-1.0.3.zip",
+          "archiveFileName": "freaklabs-wildlife-1.0.3.zip",
+          "checksum": "SHA-256:03b8ae88623d9d242a9ba1d0dfc7c602e6e52f69336541d2ce8c6c961293ae2a",
           "size": "702167",
           "boards": [
               {"name": "FreakLabs WildLogger v1.x"}, 
