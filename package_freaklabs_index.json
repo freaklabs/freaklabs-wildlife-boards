@@ -12,12 +12,27 @@
         {
           "name": "Freaklabs Wildlife Boards",
           "architecture": "avr",
-          "version": "1.0.3",
+          "version": "1.0.1",
           "category": "Freaklabs",
-          "url": "https://github.com/freaklabs/freaklabs-wildlife-boards/raw/master/boards/freaklabs-wildlife-1.0.3.zip",
-          "archiveFileName": "freaklabs-wildlife-1.0.3.zip",
-          "checksum": "SHA-256:03b8ae88623d9d242a9ba1d0dfc7c602e6e52f69336541d2ce8c6c961293ae2a",
+          "url": "https://github.com/freaklabs/freaklabs-wildlife-boards/raw/master/boards/freaklabs-wildlife-1.0.1.zip",
+          "archiveFileName": "freaklabs-wildlife-1.0.1.zip",
+          "checksum": "SHA-256:f1861d8065de97f15f417fed36dff0c0d8bd6d07d84f90454acdd41aeeddfb2f",
           "size": "702167",
+          "boards": [
+              {"name": "FreakLabs WildLogger v1.x"}, 
+              {"name": "FreakLabs Wilduino Standard v1.x"}, 
+              {"name": "FreakLabs Wilduino Deluxe v1.x"}
+          ]
+        },
+        {
+          "name": "Freaklabs Wildlife Boards",
+          "architecture": "avr",
+          "version": "1.0.2",
+          "category": "Freaklabs",
+          "url": "https://github.com/freaklabs/freaklabs-wildlife-boards/raw/master/boards/freaklabs-wildlife-1.0.2.zip",
+          "archiveFileName": "freaklabs-wildlife-1.0.2.zip",
+          "checksum": "SHA-256:fbb9bb01c76ea6510279709cbc4f237fae25f9a8085adaff4bd3c550d067a5f8",
+          "size": "702206",
           "boards": [
               {"name": "FreakLabs WildLogger v1.x"}, 
               {"name": "FreakLabs Wilduino Standard v1.x"}, 

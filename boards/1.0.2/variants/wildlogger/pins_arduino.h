@@ -71,7 +71,7 @@ static const uint8_t A7 = 31;
                                 (((p) <= 31)    ?    (p-24) : \
                                                 0)))))))))))))))
 
-#define digitalPinToInterrupt(p)  ((p) == 6 ? 2 : ((p) == 3 ? 1 : ((p) == 2 ? 0 : NOT_AN_INTERRUPT))
+#define digitalPinToInterrupt(p)  ((p) == 6 ? 2 : ((p) == 3 ? 1 : ((p) == 2 ? 0 : NOT_AN_INTERRUPT)))
 
 #ifdef ARDUINO_MAIN
 
