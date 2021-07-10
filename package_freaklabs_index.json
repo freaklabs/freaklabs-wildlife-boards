@@ -51,7 +51,7 @@
           "boards": [
               {"name": "FreakLabs WildLogger v1.x"}, 
               {"name": "FreakLabs Wilduino Standard v1.x"}, 
-              {"name": "FreakLabs Wilduino Deluxe v1.x"}
+              {"name": "FreakLabs Wilduino Deluxe v1.x"},
               {"name": "FreakLabs Boombox"}
           ]
         }
