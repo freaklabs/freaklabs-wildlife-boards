@@ -74,8 +74,36 @@ wildlogger.upload.speed=57600
 wildlogger.bootloader.low_fuses=0xFD
 wildlogger.bootloader.high_fuses=0xDC
 wildlogger.bootloader.extended_fuses=0xFE
-wildlogger.bootloader.file=optiboot/optiboot_atmega1284p_8mhz_57k.hex
+wildlogger.bootloader.file=optiboot/optiboot_1284p_8MHz_57.6k.hex
 
 wildlogger.build.f_cpu=8000000L
 wildlogger.build.mcu=atmega1284p
 wildlogger.build.variant=wildlogger
+
+##############################################################
+## Boombox
+
+boombox.name=FreakLabs Boombox 
+
+boombox.upload.tool=arduino:avrdude
+boombox.upload.protocol=arduino
+
+boombox.bootloader.tool=arduino:avrdude
+boombox.bootloader.unlock_bits=0x3F
+boombox.bootloader.lock_bits=0x0F
+
+boombox.build.f_cpu=8000000L
+boombox.build.core=arduino:arduino
+boombox.build.board=BOOMBOX
+
+boombox.upload.maximum_size=28672
+boombox.upload.maximum_data_size=2048
+boombox.upload.speed=57600
+
+boombox.bootloader.low_fuses=0xFF
+boombox.bootloader.high_fuses=0xDA
+boombox.bootloader.extended_fuses=0xFE
+boombox.bootloader.file=optiboot/optiboot_freakduino328p8mhz.hex
+
+boombox.build.mcu=atmega328p
+boombox.build.variant=boombox

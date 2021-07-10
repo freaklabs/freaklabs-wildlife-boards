@@ -162,8 +162,8 @@ const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] =
     _BV(5),                         /* 11 - PB5 */
     _BV(6),                         /* 12 - PB6 */
     _BV(7),                         /* 13 - PB7 */
-    _BV(6),                         /* 14 - High Gain Mode */ 
-    _BV(7),                         /* 15 - Radio CsN*/ 
+    _BV(6),                         /* 14 - PC6 */ 
+    _BV(7),                         /* 15 - PC7*/ 
     _BV(5), /* 16, port C */        /* 16 - PC5 */
     _BV(4),                         /* 17 - PC4 */ 
     _BV(4),                         /* 18 - PD4 */
