@@ -20,14 +20,14 @@ wilduino.build.board=WILDUINO
 	## ---------------------------------------------
 	wilduino.menu.ver.wildstd=Wilduino Standard v1.x
 
-	wilduino.menu.ver.wildstd.upload.maximum_size=28672
+	wilduino.menu.ver.wildstd.upload.maximum_size=32256
 	wilduino.menu.ver.wildstd.upload.maximum_data_size=2048
 	wilduino.menu.ver.wildstd.upload.speed=115200
 
-	wilduino.menu.ver.wildstd.bootloader.low_fuses=0xE2
-	wilduino.menu.ver.wildstd.bootloader.high_fuses=0xDA
+	wilduino.menu.ver.wildstd.bootloader.low_fuses=0xFF
+	wilduino.menu.ver.wildstd.bootloader.high_fuses=0xDE
 	wilduino.menu.ver.wildstd.bootloader.extended_fuses=0xFE
-	wilduino.menu.ver.wildstd.bootloader.file=optiboot/optiboot_atmega328.hex.hex
+	wilduino.menu.ver.wildstd.bootloader.file=optiboot/optiboot_atmega328.hex
 
 	wilduino.menu.ver.wildstd.build.mcu=atmega328p
 	wilduino.menu.ver.wildstd.build.variant=wilduino-std
