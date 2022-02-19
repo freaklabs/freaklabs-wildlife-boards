@@ -107,3 +107,25 @@ boombox.bootloader.file=optiboot/optiboot_freakduino328p8mhz.hex
 
 boombox.build.mcu=atmega328p
 boombox.build.variant=boombox
+
+##############################################################
+## Baseliner
+
+wilduino3g.name=Freaklabs Baseliner
+wilduino3g.upload.tool=arduino:avrdude
+wilduino3g.upload.protocol=arduino
+wilduino3g.upload.maximum_size=126976
+wilduino3g.upload.maximum_data_size=16384
+wilduino3g.upload.speed=230400
+wilduino3g.bootloader.tool=arduino:avrdude
+wilduino3g.bootloader.unlock_bits=0x3F
+wilduino3g.bootloader.lock_bits=0x0F
+wilduino3g.bootloader.low_fuses=0xFD
+wilduino3g.bootloader.high_fuses=0xDC
+wilduino3g.bootloader.extended_fuses=0xFE
+wilduino3g.bootloader.file=optiboot/optiboot_atmega1284p_7MHz.hex
+wilduino3g.build.core=arduino:arduino
+wilduino3g.build.board=BASELINER
+wilduino3g.build.f_cpu=7372800L
+wilduino3g.build.mcu=atmega1284p
+wilduino3g.build.variant=baseliner
