@@ -213,5 +213,3 @@ const uint8_t PROGMEM digital_pin_to_timer_PGM[] =
 };
 
 #endif // ARDUINO_MAIN
-
-#endif // Pins_Arduino_h
