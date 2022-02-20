@@ -62,7 +62,7 @@
           "category": "Freaklabs",
           "url": "https://github.com/freaklabs/freaklabs-wildlife-boards/raw/master/boards/freaklabs-wildlife-1.0.4.zip",
           "archiveFileName": "freaklabs-wildlife-1.0.4.zip",
-          "checksum": "SHA-256:f1861d8065de97f15f417fed36dff0c0d8bd6d07d84f90454acdd41aeeddfb2f",
+          "checksum": "SHA-256:71f0223f73511d4398f80f45332b66a8f7cf31862bc07dc02150459cee70c271",
           "size": "664954",
           "boards": [
               {"name": "FreakLabs WildLogger v1.x"}, 
