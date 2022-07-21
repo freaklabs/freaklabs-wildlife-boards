@@ -111,21 +111,48 @@ boombox.build.variant=boombox
 ##############################################################
 ## Baseliner
 
-wilduino3g.name=Freaklabs Baseliner
-wilduino3g.upload.tool=arduino:avrdude
-wilduino3g.upload.protocol=arduino
-wilduino3g.upload.maximum_size=126976
-wilduino3g.upload.maximum_data_size=16384
-wilduino3g.upload.speed=230400
-wilduino3g.bootloader.tool=arduino:avrdude
-wilduino3g.bootloader.unlock_bits=0x3F
-wilduino3g.bootloader.lock_bits=0x0F
-wilduino3g.bootloader.low_fuses=0xFD
-wilduino3g.bootloader.high_fuses=0xDC
-wilduino3g.bootloader.extended_fuses=0xFE
-wilduino3g.bootloader.file=optiboot/optiboot_atmega1284p_7MHz.hex
-wilduino3g.build.core=arduino:arduino
-wilduino3g.build.board=BASELINER
-wilduino3g.build.f_cpu=7372800L
-wilduino3g.build.mcu=atmega1284p
-wilduino3g.build.variant=baseliner
+baseliner.name=Freaklabs Baseliner
+baseliner.upload.tool=arduino:avrdude
+baseliner.upload.protocol=arduino
+baseliner.upload.maximum_size=126976
+baseliner.upload.maximum_data_size=16384
+baseliner.upload.speed=230400
+baseliner.bootloader.tool=arduino:avrdude
+baseliner.bootloader.unlock_bits=0x3F
+baseliner.bootloader.lock_bits=0x0F
+baseliner.bootloader.low_fuses=0xFD
+baseliner.bootloader.high_fuses=0xDC
+baseliner.bootloader.extended_fuses=0xFE
+baseliner.bootloader.file=optiboot/optiboot_atmega1284p_7MHz.hex
+baseliner.build.core=arduino:arduino
+baseliner.build.board=BASELINER
+baseliner.build.f_cpu=7372800L
+baseliner.build.mcu=atmega1284p
+baseliner.build.variant=baseliner
+
+##############################################################
+## Soily
+
+soily.name=Freaklabs Soily - Soil Testing Instrumentation
+
+soily.upload.tool=arduino:avrdude
+soily.upload.protocol=arduino
+
+soily.bootloader.tool=arduino:avrdude
+soily.bootloader.unlock_bits=0x3F
+soily.bootloader.lock_bits=0x0F
+
+soily.build.core=arduino:arduino
+soily.build.board=SOILY
+soily.upload.maximum_size=126976
+soily.upload.maximum_data_size=16384
+soily.upload.speed=230400
+
+soily.bootloader.low_fuses=0xFD
+soily.bootloader.high_fuses=0xDC
+soily.bootloader.extended_fuses=0xFE
+soily.bootloader.file=optiboot/optiboot_atmega1284p_7MHz.hex
+
+soily.build.f_cpu=7372800L
+soily.build.mcu=atmega1284p
+soily.build.variant=soily

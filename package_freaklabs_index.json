@@ -71,6 +71,24 @@
               {"name": "FreakLabs Boombox"},
               {"name": "FreakLabs Baseliner"}
           ]
+        },
+        {
+          "name": "Freaklabs Wildlife Boards",
+          "architecture": "avr",
+          "version": "1.0.5",
+          "category": "Freaklabs",
+          "url": "https://github.com/freaklabs/freaklabs-wildlife-boards/raw/master/boards/freaklabs-wildlife-1.0.5.zip",
+          "archiveFileName": "freaklabs-wildlife-1.0.5.zip",
+          "checksum": "SHA-256:d02d08d17a9cf57481f43b4f148ccf7bf33fdd5be8036f4366d72560c8d3e16f",
+          "size": "666799",
+          "boards": [
+              {"name": "FreakLabs WildLogger v1.x"}, 
+              {"name": "FreakLabs Wilduino Standard v1.x"}, 
+              {"name": "FreakLabs Wilduino Deluxe v1.x"},
+              {"name": "FreakLabs Boombox"},
+              {"name": "FreakLabs Baseliner"}
+              {"name": "FreakLabs Soily"}
+          ]
         }
       ],
       "toolsDependencies": [
