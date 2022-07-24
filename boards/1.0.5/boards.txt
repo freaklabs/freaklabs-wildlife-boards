@@ -114,26 +114,50 @@ boombox.build.variant=boombox
 baseliner.name=Freaklabs Baseliner
 baseliner.upload.tool=arduino:avrdude
 baseliner.upload.protocol=arduino
-baseliner.upload.maximum_size=126976
-baseliner.upload.maximum_data_size=16384
-baseliner.upload.speed=230400
 baseliner.bootloader.tool=arduino:avrdude
 baseliner.bootloader.unlock_bits=0x3F
 baseliner.bootloader.lock_bits=0x0F
-baseliner.bootloader.low_fuses=0xFD
-baseliner.bootloader.high_fuses=0xDC
-baseliner.bootloader.extended_fuses=0xFE
-baseliner.bootloader.file=optiboot/optiboot_atmega1284p_7MHz.hex
 baseliner.build.core=arduino:arduino
-baseliner.build.board=BASELINER
-baseliner.build.f_cpu=7372800L
-baseliner.build.mcu=atmega1284p
-baseliner.build.variant=baseliner
+
+
+	## Baseliner Sensor Station
+	## ---------------------------------------------
+	baseliner.menu.ver.baselinersensor=Baseliner LoRa Sensor Station
+	baseliner.menu.ver.baselinersensor.upload.maximum_size=126976
+	baseliner.menu.ver.baselinersensor.upload.maximum_data_size=16384
+	baseliner.menu.ver.baselinersensor.upload.speed=250000
+
+	baseliner.menu.ver.baselinersensor.bootloader.low_fuses=0xFD
+	baseliner.menu.ver.baselinersensor.bootloader.high_fuses=0xDC
+	baseliner.menu.ver.baselinersensor.bootloader.extended_fuses=0xFE
+	baseliner.menu.ver.baselinersensor.bootloader.file=optiboot/optibootbaseliner1284p8mhz250k.hex
+
+	baseliner.menu.ver.baselinersensor.build.f_cpu=8000000L
+	baseliner.menu.ver.baselinersensor.build.mcu=atmega1284p
+	baseliner.menu.ver.baselinersensor.build.variant=baseliner
+	baseliner.menu.ver.baselinersensor.build.board=BASELINER_SENSOR
+
+	## Baseliner Gateway
+	## ---------------------------------------------
+	baseliner.menu.ver.baselinergateway=Baseliner LoRa Gateway
+	baseliner.menu.ver.baselinergateway.upload.maximum_size=126976
+	baseliner.menu.ver.baselinergateway.upload.maximum_data_size=16384
+	baseliner.menu.ver.baselinergateway.upload.speed=230400
+
+	baseliner.menu.ver.baselinergateway.bootloader.low_fuses=0xFD
+	baseliner.menu.ver.baselinergateway.bootloader.high_fuses=0xDC
+	baseliner.menu.ver.baselinergateway.bootloader.extended_fuses=0xFE
+	baseliner.menu.ver.baselinergateway.bootloader.file=optiboot/optiboot_atmega1284p_7MHz.hex
+
+	baseliner.menu.ver.baselinergateway.build.f_cpu=7372800L
+	baseliner.menu.ver.baselinergateway.build.mcu=atmega1284p
+	baseliner.menu.ver.baselinergateway.build.variant=baseliner
+	baseliner.menu.ver.baselinerbaselinergatewaysensor.build.board=BASELINER_GATEWAY	
 
 ##############################################################
 ## Soily
 
-soily.name=Freaklabs Soily - Soil Testing Instrumentation
+soily.name=Freaklabs Soily
 
 soily.upload.tool=arduino:avrdude
 soily.upload.protocol=arduino
@@ -146,13 +170,14 @@ soily.build.core=arduino:arduino
 soily.build.board=SOILY
 soily.upload.maximum_size=126976
 soily.upload.maximum_data_size=16384
-soily.upload.speed=230400
+soily.upload.speed=250000
 
 soily.bootloader.low_fuses=0xFD
 soily.bootloader.high_fuses=0xDC
 soily.bootloader.extended_fuses=0xFE
-soily.bootloader.file=optiboot/optiboot_atmega1284p_7MHz.hex
+soily.bootloader.file=optiboot/optibootbaseliner1284p8mhz250k.hex
 
-soily.build.f_cpu=7372800L
+soily.build.f_cpu=8000000L
 soily.build.mcu=atmega1284p
 soily.build.variant=soily
+soily.build.board=SOILY
