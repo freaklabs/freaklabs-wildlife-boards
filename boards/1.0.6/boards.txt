@@ -118,6 +118,7 @@ baseliner.bootloader.tool=arduino:avrdude
 baseliner.bootloader.unlock_bits=0x3F
 baseliner.bootloader.lock_bits=0x0F
 baseliner.build.core=arduino:arduino
+baseliner.build.board=BASELINER
 
 
 	## Baseliner Sensor Station
@@ -152,32 +153,94 @@ baseliner.build.core=arduino:arduino
 	baseliner.menu.ver.baselinergateway.build.f_cpu=7372800L
 	baseliner.menu.ver.baselinergateway.build.mcu=atmega1284p
 	baseliner.menu.ver.baselinergateway.build.variant=baseliner
-	baseliner.menu.ver.baselinerbaselinergatewaysensor.build.board=BASELINER_GATEWAY	
+	baseliner.menu.ver.baselinergateway.build.board=BASELINER_GATEWAY	
+
+	## Baseliner Gateway v11
+	## ---------------------------------------------
+	baseliner.menu.ver.baselinergatewayv11=Baseliner LoRa Gateway v1.1+
+	baseliner.menu.ver.baselinergatewayv11.upload.maximum_size=126976
+	baseliner.menu.ver.baselinergatewayv11.upload.maximum_data_size=16384
+	baseliner.menu.ver.baselinergatewayv11.upload.speed=230400
+
+	baseliner.menu.ver.baselinergatewayv11.bootloader.low_fuses=0xFD
+	baseliner.menu.ver.baselinergatewayv11.bootloader.high_fuses=0xDC
+	baseliner.menu.ver.baselinergatewayv11.bootloader.extended_fuses=0xFE
+	baseliner.menu.ver.baselinergatewayv11.bootloader.file=optiboot/optiboot_atmega1284p_7MHz.hex
+
+	baseliner.menu.ver.baselinergatewayv11.build.f_cpu=7372800L
+	baseliner.menu.ver.baselinergatewayv11.build.mcu=atmega1284p
+	baseliner.menu.ver.baselinergatewayv11.build.variant=baseliner-gateway-v11
+	baseliner.menu.ver.baselinergatewayv11.build.board=BASELINER_GATEWAY	
 
 ##############################################################
 ## Soily
 
 soily.name=Freaklabs Soily
-
 soily.upload.tool=arduino:avrdude
 soily.upload.protocol=arduino
-
 soily.bootloader.tool=arduino:avrdude
 soily.bootloader.unlock_bits=0x3F
 soily.bootloader.lock_bits=0x0F
-
 soily.build.core=arduino:arduino
 soily.build.board=SOILY
-soily.upload.maximum_size=126976
-soily.upload.maximum_data_size=16384
-soily.upload.speed=250000
 
-soily.bootloader.low_fuses=0xFD
-soily.bootloader.high_fuses=0xDC
-soily.bootloader.extended_fuses=0xFE
-soily.bootloader.file=optiboot/optibootbaseliner1284p8mhz250k.hex
+	## Soily v1.0
+	## ---------------------------------------------
+	soily.menu.ver.soilyv10=Soily v1.0 (Baseliner LoRa Board)
+	soily.menu.ver.soilyv10.upload.maximum_size=126976
+	soily.menu.ver.soilyv10.upload.maximum_data_size=16384
+	soily.menu.ver.soilyv10.upload.speed=maximum_data_size
 
-soily.build.f_cpu=8000000L
-soily.build.mcu=atmega1284p
-soily.build.variant=soily
-soily.build.board=SOILY
+	soily.menu.ver.soilyv10.bootloader.low_fuses=0xFD
+	soily.menu.ver.soilyv10.bootloader.high_fuses=0xDC
+	soily.menu.ver.soilyv10.bootloader.extended_fuses=0xFE
+	soily.menu.ver.soilyv10.bootloader.file=optiboot/optibootbaseliner1284p8mhz250k.hex
+
+	soily.menu.ver.soilyv10.build.f_cpu=8000000L
+	soily.menu.ver.soilyv10.build.mcu=atmega1284p
+	soily.menu.ver.soilyv10.build.variant=soily
+	soily.menu.ver.soilyv10.build.board=SOILYV10
+
+	## Soily v1.0P1+
+	## ---------------------------------------------
+	soily.menu.ver.soilyv10P1=Soily v1.0P1+
+	soily.menu.ver.soilyv10P1.upload.maximum_size=126976
+	soily.menu.ver.soilyv10P1.upload.maximum_data_size=16384
+	soily.menu.ver.soilyv10P1.upload.speed=57600
+
+	soily.menu.ver.soilyv10P1.bootloader.low_fuses=0xFD
+	soily.menu.ver.soilyv10P1.bootloader.high_fuses=0xDC
+	soily.menu.ver.soilyv10P1.bootloader.extended_fuses=0xFE
+	soily.menu.ver.soilyv10P1.bootloader.file=optiboot/optiboot_1284p_8MHz_57.6k.hex
+
+	soily.menu.ver.soilyv10P1.build.f_cpu=8000000L
+	soily.menu.ver.soilyv10P1.build.mcu=atmega1284p
+	soily.menu.ver.soilyv10P1.build.variant=soily
+	soily.menu.ver.soilyv10P1.build.board=SOILYV10P1
+
+##############################################################
+## Baselogger
+
+baselogger.name=Freaklabs Baselogger
+
+baselogger.upload.tool=arduino:avrdude
+baselogger.upload.protocol=arduino
+
+baselogger.bootloader.tool=arduino:avrdude
+baselogger.bootloader.unlock_bits=0x3F
+baselogger.bootloader.lock_bits=0x0F
+
+baselogger.build.core=arduino:arduino
+baselogger.build.board=WILDLOGGER
+baselogger.upload.maximum_size=126976
+baselogger.upload.maximum_data_size=16384
+baselogger.upload.speed=57600
+
+baselogger.bootloader.low_fuses=0xFD
+baselogger.bootloader.high_fuses=0xDC
+baselogger.bootloader.extended_fuses=0xFE
+baselogger.bootloader.file=optiboot/optiboot_1284p_8MHz_57.6k.hex
+
+baselogger.build.f_cpu=8000000L
+baselogger.build.mcu=atmega1284p
+baselogger.build.variant=baselogger
